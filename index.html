@@ -2,11 +2,11 @@
 <html lang="en-US">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' type="text/css" href="./Assets/CSS/style.css"> 
-    <script src="./Assets/JS/javascript.js"></script>  
+    <link rel='stylesheet' type="text/css" href="./Assets/CSS/style.css">
+    <script src="./Assets/JS/javascript.js"></script>
     <title>We Want You(r Info)</title>
     <link rel="icon" type="image/x-icon" href="Assets/Images/icons8-contact-details-100.png">
 
@@ -14,42 +14,44 @@
 
 <body>
     <header class="header">
-        <img class="logo"
-        src="/Assets/Images/cat banner.png"
-        alt="The Legend"/>
-    </header>
+        <img class="logo" src="/Assets/Images/cat banner.png" alt="Cat In A Box" />
+
     
-    <!--<header class="header">
-        <div class="logo"></div>
-    </header> -->
-        
+    </header>
+ 
     <main>
+
         <body>
             <h1>Fill In The Information Below To Get Your Free Cat Pic!</h1>
             <h2>(while supplies last)*</h2>
             <form method="GET" name="contactform" action="http://www.stylus.co.za/mailprocessor.php">
                 <fieldset>
-                    <legend><h3>Do It Right Meow!</h3></legend>
+                    <legend>
+                        <h3>Do It Right Meow!</h3>
+                    </legend>
                     <label for="contactname">Your Name:</label>
                     <input type="text" name="contactname" required />
                     <label for="contactemail">Your E-mail address:</label>
                     <input type="email" name="contactemail" required />
                     <label for="contactcell">Your Cell number:</label>
-                    <input type="tel" name="contactcell" placeholder="Format: 000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                    <input type="tel" name="contactcell" placeholder="Format: 000-000-0000"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
                     <label for="said">Your Social Security number:</label>
-                    <input type="tel" name="contactcell" placeholder="Format: 000-00-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                    <input type="tel" name="contactcell" placeholder="Format: 000-00-0000"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
                     <label for="contactmessage">How much do you love cats?:</label>
                     <textarea name="contactmessage" rows="4"></textarea>
-                    <input type="checkbox" name="contactcopy" value="sendcopy" /> <label for="contactcopy">I've read, understand, and agree to the terms and conditions</label>
+                    <input type="checkbox" name="contactcopy" value="sendcopy" /> <label for="contactcopy">I've read,
+                        understand, and agree to the terms and conditions</label>
                 </fieldset>
                 <!-- you would never do the below - you would code the e-mail address in the server-side script -->
                 <input type="hidden" name="ccmail" value="@gmail.com" />
                 <input type="submit" value="Send" />
             </form>
-        
-        </main>
 
-        <footer></footer>
+    </main>
+
+    <footer></footer>
 </body>
 
 </html>
