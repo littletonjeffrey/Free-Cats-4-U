@@ -9,49 +9,91 @@
     <script src="./Assets/JS/javascript.js"></script>
     <title>We Want You(r Info)</title>
     <link rel="icon" type="image/x-icon" href="Assets/Images/icons8-contact-details-100.png">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header class="header">
         <img class="logo" src="Assets/Images/cat banner.png" alt="Cat In A Box" />
 
-    
+        <div class="topnav" id="myTopnav">
+  
+            <a>FAQ</a>  
+            <a href="#home" class="active">How Can I Get A Free Cat Pic?</a>
+            <a href="#news">Why Should I Trust You With My Information</a>
+            <a href="#contact">Is My Personal Information Valuable?</a>
+            <a href="#about">Why Not Just Take A Picture Of A Cat Myself?</a>
+            <a href="#about">Can I Get More Cat Pictures?</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+            
+        </div>
     </header>
  
-    <main>
+    <section>
 
-        <body>
-            <h1>Fill In The Information Below To Get Your Free Cat Pic!</h1>
-            <h2>(while supplies last)*</h2>
+       
+        <h1>Fill In The Information Below To Get Your Free Cat Pic!</h1>
+        <h2>(while supplies last)*</h2>
+        <div class="ContactForm"> 
             <form method="GET" name="contactform" action="http://www.stylus.co.za/mailprocessor.php">
-                <fieldset>
-                    <legend>
-                        <h3>Do It Right Meow!</h3>
-                    </legend>
-                    <label for="contactname">Your Name:</label>
-                    <input type="text" name="contactname" required />
-                    <label for="contactemail">Your E-mail address:</label>
-                    <input type="email" name="contactemail" required />
-                    <label for="contactcell">Your Cell number:</label>
-                    <input type="tel" name="contactcell" placeholder="Format: 000-000-0000"
-                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
-                    <label for="said">Your Social Security number:</label>
-                    <input type="tel" name="contactcell" placeholder="Format: 000-00-0000"
-                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
-                    <label for="contactmessage">How much do you love cats?:</label>
-                    <textarea name="contactmessage" rows="4"></textarea>
-                    <input type="checkbox" name="contactcopy" value="sendcopy" /> <label for="contactcopy">I've read,
-                        understand, and agree to the terms and conditions</label>
-                </fieldset>
+                    <fieldset>
+                        <legend>
+                            <h3>Do It Right Meow!</h3>
+                        </legend>
+                        <label for="contactname">Your Name:</label>
+                        <input type="text" name="contactname" required />
+                        <label for="contactemail">Your E-mail address:</label>
+                        <input type="email" name="contactemail" required />
+                        <label for="contactcell">Your Cell number:</label>
+                        <input type="tel" name="contactcell" placeholder="Format: 000-000-0000"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                        <label for="said">Your Social Security number:</label>
+                        <input type="tel" name="contactcell" placeholder="Format: 000-00-0000"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                        <label for="contactmessage">How much do you love cats?:</label>
+                        <textarea name="contactmessage" rows="4"></textarea>
+                        <input type="checkbox" name="contactcopy" value="sendcopy" /> <label for="contactcopy">I've read,
+                            understand, and agree to the terms and conditions</label>
+                    </fieldset>
                 <!-- you would never do the below - you would code the e-mail address in the server-side script -->
                 <input type="hidden" name="ccmail" value="@gmail.com" />
                 <input type="submit" value="Send" />
             </form>
+            
+        </div>    
+    </section>
+    <section class="FAQ">
+        <div class="questions">
+            <img src="image.png" class="left">
+            <h3>How Can I Get A Free Cat Pic?</h3>  
+            <p>Getting your very own free cat pic is easy!  All you need to do is fill in this <a href="/index.html">form</a> with your personal information, and we will give you one cat picture.  It's that easy!</p>
+        </div>
+        <div class="questions">
+            <img src="image.png" class="right">
+            <h3>Why Should I Trust You With My Personal Information?</h3>  
+            <p>Free Cat Pics 4U (part of the <strong>S</strong>eriously <strong>C</strong>redible <strong>A</strong>sset <strong>M</strong>anagement family) is a totally 100% legitmate and reputable website.†  We would never, ever, ever collect or sell any information that is shared with us.‡  We are not even sure exactly where your information goes when you give it us.§</p> 
+        </div>
+        <div class="questions">
+            <img src="image.png" class="left">
+            <h3>Is My Personal Information Valuable?</h3>  
+            <p>Pfffft...no way.¶  We mean, lets be honest, you have to write down half of this stuff so that even YOU don't forget it.  Why would anyone else in the WORLD care about it if you can't even commit it to memory.  That's why this is such a great deal for you, we get all your useless information and in return you get a one of a kind, adorable picture of a kitty kitty snookum wookums.</p>
+        </div>
+        <div class="questions">
+            <img src="image.png" class="right">
+            <h3>Why Not Just Take A Picture Of A Cat Myself</h3>  
+            <p>Easy there tiger.  Do you know how dangerous cats are?  Cats are little balls of fur, fangs, and claws.  Encountering one in the wild is a dangerous, sometimes deadly, occourence.  Not mention we are pretty sure you're not a professional photographer.  We've seen some of those pictures you post online (we have your information, remember?), and let's just say you're no "Nick Nichols"...sorry, "Who's that?" you say.  Just a famous wildlife photographer, something you would probably know if you were a professional photographer.  So leave the cat pictures to us, and you just keep surfing the web.</p>
+        </div>
+        <div class="questions">
+            <img src="image.png" class="left">
+            <h3>Can I Get More Cat Pictures?</h3>  
+            <p>YES!  But, you will have to give us some new, valid information.  We reccomend friends or family as they are easy to obtain personal information from.  You don't even have to tell them, what its for.  For every person's information you collect for us, we will give you another cat picture!#</p>
+        </div>
+    </section>  
+    
 
-    </main>
 
-    <footer></footer>
+  
 </body>
 
 </html>
